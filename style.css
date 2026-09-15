@@ -1,19 +1,106 @@
 .head-container {
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-#head-nav ul{
-    display: flex;
-    gap: 12px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+#head-nav ul {
+  display: flex;
+  gap: 12px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-#head-nav ul li a{
-    color: #000;
-    text-decoration: none;
-    font-size:18px;
+#head-nav ul li a {
+  color: #000;
+  text-decoration: none;
+  font-size: 18px;
+}
+body {
+  margin: 0;
+  padding: 0 8px;
+}
+.wrapper {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+}
+.section-margin {
+  margin: 40px 0;
+}
+.banner-inner {
+  background-color: black;
+  border-radius: 30px;
+  height: 400px;
+  overflow: hidden;
+}
+.banner-inner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* border-radius: 30px; */
+}
+.banner-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+.banner-dots span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  /* border: 0.5px solid #000; */
+  background-color: #c4c4c4;
+  margin-top: 20px;
+}
+/* .banner-dots .dot-center{
+    background-color: black;
+} this is the other way to add bg color
+ */
+
+/* sudo class */
+
+/* .banner-dots span:nth-child(odd){
+background-color: #000;
+} */
+/* .banner-dots span:nth-child(even){
+background-color: #000;
+} */
+.banner-dots span:nth-child(2) {
+  background-color: #000;
+}
+
+.android-inner {
+}
+.android-inner h2 {
+  font-size: 48px;
+  font-weight: 600;
+  text-align: center;
+  margin: 10px 0;
+}
+.android-inner-items {
+  display: grid;
+  grid-template-columns:repeat(3, auto);
+  gap: 80px;
+}
+.android-inner-items .item-card {
+  background-color: #ebe7e7;
+  padding: 20px 16px;
+}
+
+.android-inner-items .item-card figure{
+  margin: 0;
+  width: 350px;
+  height: 290px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+.android-inner-items .item-card figure img{
+  width:100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
